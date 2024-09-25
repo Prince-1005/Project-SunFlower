@@ -21,14 +21,14 @@ export const Hero = () => {
         </div>
         <div className="flex justify-center">
           <p className='text-xl text-center mt-8 max-w-md'>
-          Experience the future of solar energy with our groundbreaking sun-tracking system! This revolutionary product transforms sunlight into maximum power, effortlessly following the sun path. Say goodbye to energy waste and hello to unmatched efficiency. It is  not just a solar panel—
+          Experience the future of Chatbot services with our groundbreaking Vision Chatbot ! This revolutionary Chatbot can answer questions related to any image given by user. Say goodbye to other Vision Chatbots and hello to Vision Chatbot. It is  not just a chatbot
           
           
-          it is  the smartest energy solution of all time!
+          it is the smartest computer vision integrated Chatbot of all time!
           </p>
         </div>
         <div className="flex justify-center mt-8">
-          <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Get for free</button>
+          <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Try Vision Chatbot</button>
         </div>
       </div>
     </div>
