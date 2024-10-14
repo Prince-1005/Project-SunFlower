@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1 className='text-7xl sm:text-9xl font-bold tracking-tightner text-center inline-flex'>
-              Vision Chatbot<br/>
+              Vision<br/>
             </h1>
           </div>
         </div>
