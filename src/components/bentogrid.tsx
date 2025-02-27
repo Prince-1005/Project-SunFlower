@@ -8,8 +8,10 @@ const logos = [
   "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800359/WISE.L-b3d3de3c_rexehe.png"
 ];
 
-const lineWidth = 80; 
-const lineHeight = 2; 
+const lineWidth = 80;
+const lineHeight = 2;
+
+
 
 const LogoBeam = () => {
   return (
@@ -113,12 +115,12 @@ const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
 };
 
 const AWSIcon = () => {
-  
+
 
   return (
     <div className="flex flex-col justify-center h-full items-center relative">
-         <div className="flex flex-row gap-8 justify-center h-full items-center relative">
-         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+      <div className="flex flex-row gap-8 justify-center h-full items-center relative">
+        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img src={logos[0]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
@@ -163,10 +165,10 @@ const AWSIcon = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        </div>
+      </div>
 
-      
-        <div className="text-left p-6 mt-4">
+
+      <div className="text-left p-6 mt-4">
         <h1 className="text-white text-2xl font-bold mb-2">Solar Tracking Integration</h1>
         <p className="text-gray-400 text-lg">Seamlessly integrate our solar tracker with your existing systems.</p>
       </div>
@@ -276,8 +278,8 @@ const BentoBox1 = () => {
             <div className="flex flex-col justify-center h-full">
               <LogoBeam />
               <div className="text-left p-6">
-              <h1 className="text-white text-2xl font-bold mb-2">Advanced Solar Tracking</h1>
-<p className="text-white/70 text-lg">Optimize energy capture effortlessly with state-of-the-art tracking technology that moves with the sun, ensuring maximum output every single day.</p>
+                <h1 className="text-white text-2xl font-bold mb-2">Advanced Solar Tracking</h1>
+                <p className="text-white/70 text-lg">Optimize energy capture effortlessly with state-of-the-art tracking technology that moves with the sun, ensuring maximum output every single day.</p>
 
               </div>
             </div>
@@ -301,4 +303,3 @@ function Bentodemo() {
 }
 
 export default Bentodemo;
-          
