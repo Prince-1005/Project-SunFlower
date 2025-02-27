@@ -3,54 +3,54 @@ import { useState } from "react";
 import PlusIcon from "../assets/icons/plus.svg";
 import MinusIcon from "../assets/icons/minus.svg";
 import clsx from "clsx";
-import {motion , AnimatePresence} from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 const items = [
   {
-    question: "What is the cost of installing the solar tracking system?",
+    question: "What is Heart2Heart?",
     answer:
-      "The cost of installation depends on several factors, including the size of your solar array and your specific location. Please contact our sales team for a customized quote based on your needs and location.",
+      "Heart2Heart is an AI-powered companion designed to offer emotional support and understanding. It serves as a friendly, non-judgmental partner that listens and responds thoughtfully through both text and voice interactions.",
   },
   {
-    question: "How does the solar tracking system improve efficiency?",
+    question: "How does Heart2Heart engage with users?",
     answer:
-      "Our solar tracking system automatically adjusts the angle of your solar panels to follow the sun’s path throughout the day. This ensures that your panels receive maximum sunlight exposure, increasing energy production by up to 30% compared to fixed systems.",
+      "With a seamless blend of text and voice interaction, Heart2Heart adapts to your communication style. No complicated commands—just natural, flowing conversations designed to make you feel heard and valued.",
   },
   {
-    question: "Can I retrofit the solar tracker to my existing solar panels?",
+    question: "What makes Heart2Heart unique?",
     answer:
-      "Yes, our solar tracking system is designed to be compatible with most existing solar panel setups. Our installation team will evaluate your current system and make any necessary adjustments to ensure a smooth integration.",
+      "Unlike traditional chatbots, Heart2Heart isn’t just about giving answers—it’s about making connections. It creates a safe space for self-expression, responding with warmth and thoughtfulness, even without pre-trained emotional intelligence.",
   },
   {
-    question: "What maintenance is required for the solar tracking system?",
+    question: "Can Heart2Heart replace human support?",
     answer:
-      "The solar tracking system is designed for minimal maintenance. Regular checks and occasional cleaning of the panels are recommended to ensure optimal performance. Our support team provides detailed maintenance guidelines and is available for assistance if needed.",
+      "Heart2Heart isn’t a substitute for professional therapy or human connection, but it’s a bridge to emotional support—a tool that offers comfort, companionship, and a listening ear whenever you need it.",
   },
 ];
 
-const AccordinationItem = ({question, answer}:{question:string, answer: string}) => {
-  const[isOpen, setIsOpen] = useState(false);
-  return(
-   
+const AccordinationItem = ({ question, answer }: { question: string, answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+
     <div className=" py-7 border-b border-white/30" onClick={() => setIsOpen(!isOpen)}>
-    <div className="flex items-center ">
-      <span className="flex-1 text-lg font-bold">{question}</span>
-      {isOpen ? <MinusIcon /> :<PlusIcon />}
-      
+      <div className="flex items-center ">
+        <span className="flex-1 text-lg font-bold">{question}</span>
+        {isOpen ? <MinusIcon /> : <PlusIcon />}
+
       </div>
       <AnimatePresence>
-      {isOpen && (
-        <motion.div 
-        initial={{opacity: 0, height: 0, marginTop: 0}}
-        animate={{opacity: 1, height: "auto" , marginTop:'16px'}}
-        exit={{opacity: 0, height: 0, marginTop: 0}}
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0, marginTop: 0 }}
+            animate={{ opacity: 1, height: "auto", marginTop: '16px' }}
+            exit={{ opacity: 0, height: 0, marginTop: 0 }}
           >{answer}</motion.div>
 
-      )}
+        )}
       </AnimatePresence>
-    
-  </div>
-  
-    
+
+    </div>
+
+
   )
 }
 
@@ -62,9 +62,9 @@ export const FAQs = () => {
           Frequently Asked Questions
         </h2>
         <div className="mt-12 max-w-[648px] mx-auto">
-         {items.map(({question, answer}) => (
-            <AccordinationItem question={question} answer={answer} key={question}/>
-         ))}
+          {items.map(({ question, answer }) => (
+            <AccordinationItem question={question} answer={answer} key={question} />
+          ))}
         </div>
       </div>
     </div>

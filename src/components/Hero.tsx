@@ -15,20 +15,17 @@ export const Hero = () => {
         <div className="flex justify-center mt-8">
           <div className="inline-flex relative">
             <h1 className='text-7xl sm:text-9xl font-bold tracking-tightner text-center inline-flex'>
-              Vision<br/>
+              Heart2Heart<br />
             </h1>
           </div>
         </div>
         <div className="flex justify-center">
           <p className='text-xl text-center mt-8 max-w-md'>
-          Experience the future of Chatbot services with our groundbreaking Vision Chatbot ! This revolutionary Chatbot can answer questions related to any image given by user. Say goodbye to other Vision Chatbots and hello to Vision Chatbot. It is  not just a chatbot
-          
-          
-          it is the smartest computer vision integrated Chatbot of all time!
+            Life can be overwhelming, and sometimes, all you need is someone who truly listens. Heart2Heart is an AI-powered chatbot designed to be your caring friend and supportive companion. It engages in empathetic conversations by analyzing your words and responding in a thoughtful, comforting manner.
           </p>
         </div>
         <div className="flex justify-center mt-8">
-          <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Try Vision Chatbot</button>
+          <button className='bg-white text-black py-3 px-5 rounded-lg font-medium'>Try Heart2Heart Chatbot</button>
         </div>
       </div>
     </div>
