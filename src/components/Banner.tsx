@@ -16,7 +16,7 @@ export function Banner() {
           ✨
           <span className="font-bold">
             {" "}
-            ⭐WEBSITE BY ❤️
+            ⭐WEBSITE BY Team Howlers
           </span>{" "}
           <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
         </Link>

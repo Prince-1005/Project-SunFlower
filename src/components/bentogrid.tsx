@@ -3,9 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const logos = [
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716817722/Amazon_icon.svg_a4qmtg.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800282/Apple_logo_black.svg_seeetv.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800359/WISE.L-b3d3de3c_rexehe.png"
+  "https://res.cloudinary.com/dgxbv5vfe/image/upload/v1740762185/text_jrplgz.png",
+  "https://res.cloudinary.com/dgxbv5vfe/image/upload/v1740735581/facial-recognition_uru80r.png",
+  "https://res.cloudinary.com/dgxbv5vfe/image/upload/v1740734683/pngwing.com_bdyhml.png"
 ];
 
 const lineWidth = 80;
@@ -17,7 +17,7 @@ const LogoBeam = () => {
   return (
     <div className="flex items-center justify-center min-h-52">
       <div className="relative flex items-center">
-        <div className="bg-[#000] border border-white/30  rounded-2xl flex items-center justify-center w-14 h-14 p-4">
+        <div className="bg-[#000] border border-white/30  rounded-2xl flex items-center justify-center w-16 h-16 p-4">
           <img src={logos[0]} alt="Logo 1" className="filter invert brightness-0" />
         </div>
         <div className="relative" style={{ width: `${lineWidth}px`, height: `${lineHeight}px`, backgroundColor: '#FFFFFF', overflow: 'hidden' }}>
@@ -34,7 +34,7 @@ const LogoBeam = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-20 h-20 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
@@ -63,7 +63,7 @@ const LogoBeam = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="bg-black border border-white/30 rounded-2xl flex items-center justify-center w-14 h-14 p-4">
+        <div className="bg-black border border-white/30 rounded-2xl flex items-center justify-center w-16 h-16 p-4">
           <img src={logos[2]} alt="Logo 3" className="filter invert brightness-0" />
         </div>
       </div>
@@ -120,7 +120,7 @@ const AWSIcon = () => {
   return (
     <div className="flex flex-col justify-center h-full items-center relative">
       <div className="flex flex-row gap-8 justify-center h-full items-center relative">
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-20 h-20 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img src={logos[0]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
@@ -135,7 +135,7 @@ const AWSIcon = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-20 h-20 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
@@ -150,7 +150,7 @@ const AWSIcon = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-20 h-20 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img src={logos[2]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
@@ -169,8 +169,8 @@ const AWSIcon = () => {
 
 
       <div className="text-left p-6 mt-4">
-        <h1 className="text-white text-2xl font-bold mb-2">Solar Tracking Integration</h1>
-        <p className="text-gray-400 text-lg">Seamlessly integrate our solar tracker with your existing systems.</p>
+        <h1 className="text-white text-2xl font-bold mb-2">Mood Tracking Integration</h1>
+        <p className="text-gray-400 text-lg">Integrates facial mood detection, text emotion analysis, and empathetic speech to track and support your well-being</p>
       </div>
     </div>
   );
@@ -213,7 +213,7 @@ const BentoBox1 = () => {
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">
               <div className="flex justify-between items-center mb-6 pb-2">
-                <h2 className="text-white/70 text-xl">Solar Output</h2>
+                <h2 className="text-white/70 text-xl">Mood Log</h2>
                 <div className="flex items-center">
                   <div className="h-1 bg-black w-8 rounded-lg"></div>
                   <span className="ml-2 text-white/70 text-sm">Efficiency</span>
@@ -269,7 +269,7 @@ const BentoBox1 = () => {
             </div>
             <div className="text-left p-6 mt-4">
               <h1 className="text-white text-2xl font-bold mb-2">Incredible Growth</h1>
-              <p className="text-white/70 text-lg">Maximize Solar Power directly addresses the main benefit of your solar tracking system</p>
+              <p className="text-white/70 text-lg">Maximize The Quality of Life directly addresses the main benefit of your Mood Tracking System</p>
             </div>
           </div>
         </CardWithEffect>
@@ -278,8 +278,8 @@ const BentoBox1 = () => {
             <div className="flex flex-col justify-center h-full">
               <LogoBeam />
               <div className="text-left p-6">
-                <h1 className="text-white text-2xl font-bold mb-2">Advanced Solar Tracking</h1>
-                <p className="text-white/70 text-lg">Optimize energy capture effortlessly with state-of-the-art tracking technology that moves with the sun, ensuring maximum output every single day.</p>
+                <h1 className="text-white text-2xl font-bold mb-2">Advanced Mood Tracking</h1>
+                <p className="text-white/70 text-lg">Tracks your mood in real time by analyzing facial expressions with computer vision, interpreting typed text, and synthesizing empathetic speech responses.</p>
 
               </div>
             </div>
