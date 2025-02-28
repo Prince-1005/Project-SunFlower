@@ -44,6 +44,7 @@ const contributors = [
 
 export const Footer = () => {
   return (
+
     <footer className="py-5 bg-black text-white/60 border-t border-white/20">
       <div className="container mx-auto px-5">
 
@@ -98,7 +99,20 @@ export const Footer = () => {
         </ul>
       </div>
 
-    </div>
+    <footer className='py-5 bg-black text-white/60 border-t border-white/20'>
+      <div className="container">
+        <div className='flex flex-col gap-5 sm:flex-row sm:justify-between'>
+          <div className="text-center">BHAVYA has rights are reserved</div>
+          <ul className='flex justify-center gap-2.5'>
+            <li><XIcon /></li>
+            <li><LinkedInIcon /></li>
+            <li><InstaIcon /></li>
+            <li><YoutubeIcon /></li>
+          </ul>
+        </div>
+
+
+      </div>
     </footer>
   )
 };
