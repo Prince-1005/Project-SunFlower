@@ -9,15 +9,17 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Mudunuri Bhaskara Karthikeya Varma <karthikmudunuri999@gmail.com>",
+  "author": "Daksh Gorajiya Bhavya Fettaniya Prince Jakariya <dakshgorajiya13@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@vercel/blob": "^0.27.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.12",
     "lucide-react": "^0.414.0",
-    "next": "14.2.4",
+    "next": "^14.2.24",
     "react": "^18.3.1",
-    "react-dom": "^18",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
     "react-lottie": "^1.2.4",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"
@@ -25,8 +27,8 @@
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "@types/react-lottie": "^1.2.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",

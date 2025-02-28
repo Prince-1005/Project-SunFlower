@@ -26,9 +26,16 @@ export function PricingTab(props: PricingTabProps) {
         <div className="mb-5">
           <div className="text-white/70 font-semibold mb-1">{props.planName}</div>
           <div className="inline-flex items-baseline mb-2">
-            <span className="text-white/70 font-bold text-3xl">$</span>
-            <span className="text-white/50 font-bold text-4xl">{props.yearly ? props.price.yearly : props.price.monthly}</span>
-            <span className="text-white/70 font-medium">/mo</span>
+          {props.price.monthly === 0 ? (<span className="text-green-400 font-bold text-4xl">Free</span>) : (
+            <>
+          
+          <span className="text-white/70 font-bold text-3xl">$</span>
+          
+          <span className="text-white/50 font-bold text-4xl">
+          {props.yearly ? props.price.yearly : props.price.monthly}
+          </span>
+            </>
+          )}
           </div>
           <div className="text-sm text-white/70 mb-5">{props.planDescription}</div>
           <a className="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-[#5D2CA8] px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-[#5D2CA2] focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-600 transition-colors duration-150" href="#0">
@@ -75,48 +82,46 @@ export default function PricingTable() {
         {/* Pricing tab 1 */}
         <PricingTab
           yearly={isAnnual}
-          planName="Essential"
-          price={{ yearly: 29, monthly: 35 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="Basic Care"
+          price={{ yearly: 0, monthly: 0 }}
+          planDescription="Limited chats, self-care tips, and mood check-ins."
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
+            'Limited daily text conversations',
+            'Monthly wellness newsletter',
+            'Personalized mood-based suggestions',
+            'Access to self-care tips',
           ]} />
 
         {/* Pricing tab 2 */}
         <PricingTab
           yearly={isAnnual}
           popular={true}
-          planName="Perform"
-          price={{ yearly: 49, monthly: 55 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="Plus Care"
+          price={{ yearly: 10, monthly: 1 }}
+          planDescription="✨ Everything in Basic Care, plus:"
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
+            'Unlimited text conversations',
+            'Voice interaction enabled',
+            'Personalized mood-based suggestions',
+            'Priority access to new features',
+            'Stress-relief audio clips & sounds',
           ]} />
 
         {/* Pricing tab 3 */}
         <PricingTab
           yearly={isAnnual}
-          planName="Enterprise"
-          price={{ yearly: 79, monthly: 85 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          planName="Premium Care"
+          price={{ yearly: 20, monthly: 2 }}
+          planDescription="💎 Everything in Plus Care, plus:"
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
-            'Free from repetition',
+            'Unlimited text conversations',
+            'Advanced mood insights & emotion tracking',
+            'Custom conversation themes & voice styles',
+            'Exclusive mental wellness content',
+            'Early access to upcoming AI enhancements',
+            'Custom relaxation playlists based on mood',
           ]} />
-
       </div>
-
     </div>
   )
 }
